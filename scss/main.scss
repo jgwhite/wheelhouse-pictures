@@ -1,0 +1,50 @@
+$secondarygrey: #E0E4E8;
+
+body, html {
+  background-color: $secondarygrey;
+  position: relative;
+}
+
+h1 {
+  text-indent: -9999px;
+}
+
+.logo {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  @media (min-width: 800px) {
+		width: 66%;
+	}
+}
+
+.logo-flag, .logo-text-fade {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo-image {
+  position: absolute;
+  width: 91%;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.logo-text-fade {
+  opacity: 0;
+  transition: opacity 4s ease 3s;
+}
+
+.logo-image {
+  opacity: 0;
+  transition: opacity 2s ease 3s;
+}
+
+
+.show {
+  opacity: 100;
+}
