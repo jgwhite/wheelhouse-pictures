@@ -1,8 +1,10 @@
 $navy: #02203C;
 $grey: #E0E4E8;
 $secondarygrey: #99A5B0;
+$colfax-bold: "ColfaxWebBold"  "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 @import "ss-social";
+@import "fonts";
 
 body, html {
   background-color: $grey;
@@ -55,16 +57,21 @@ h1 {
 
 .social-links {
   position: fixed;
-  bottom: 20px;
+  bottom: 40px;
   text-align: center;
   width: 100%;
   a {
-    font-size: 34px;
+    font-size: 28px;
+    font-family: $colfax-bold;
+    text-decoration: none;
     color: $secondarygrey;
     margin: 8px;
     -webkit-transition: all .2s ease-out;
+    padding-bottom: 4px; 
+    border-bottom: 5px solid $secondarygrey;
     &:hover {
     	color: $navy;
+    	border-bottom: 5px solid white;
     }
   }
 }

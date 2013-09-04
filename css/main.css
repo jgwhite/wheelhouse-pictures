@@ -203,6 +203,16 @@ html:hover [class^="ss-"] {
 .ss-fivehundredpx:before, .ss-fivehundredpx.right:after {
   content: ''; }
 
+@font-face {
+  font-family: 'ColfaxWebRegular';
+  src: url("../webfonts/ColfaxWebRegular.eot");
+  src: url("../webfonts/ColfaxWebRegular.eot?#iefix") format("embedded-opentype"), url("../webfonts/ColfaxWebRegular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'ColfaxWebBold';
+  src: url("../webfonts/ColfaxWebBold.eot");
+  src: url("../webfonts/ColfaxWebBold.eot?#iefix") format("embedded-opentype"), url("../webfonts/ColfaxWebBold.woff") format("woff"); }
+
 body, html {
   background-color: #e0e4e8;
   position: relative; }
@@ -245,13 +255,18 @@ h1 {
 
 .social-links {
   position: fixed;
-  bottom: 20px;
+  bottom: 40px;
   text-align: center;
   width: 100%; }
   .social-links a {
-    font-size: 34px;
+    font-size: 28px;
+    font-family: "ColfaxWebBold" "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
     color: #99a5b0;
     margin: 8px;
-    -webkit-transition: all .2s ease-out; }
+    -webkit-transition: all .2s ease-out;
+    padding-bottom: 4px;
+    border-bottom: 5px solid #99a5b0; }
     .social-links a:hover {
-      color: #02203c; }
+      color: #02203c;
+      border-bottom: 5px solid white; }
