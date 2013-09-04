@@ -1,7 +1,11 @@
-$secondarygrey: #E0E4E8;
+$navy: #02203C;
+$grey: #E0E4E8;
+$secondarygrey: #99A5B0;
+
+@import "ss-social";
 
 body, html {
-  background-color: $secondarygrey;
+  background-color: $grey;
   position: relative;
 }
 
@@ -47,4 +51,16 @@ h1 {
 
 .show {
   opacity: 1;
+}
+
+.social-links {
+  position: fixed;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+  a {
+    font-size: 34px;
+    color: $secondarygrey;
+    margin: 8px;
+  }
 }
