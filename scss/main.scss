@@ -67,11 +67,8 @@ h1 {
     color: $secondarygrey;
     margin: 8px;
     -webkit-transition: all .2s ease-out;
-    padding-bottom: 4px; 
-    border-bottom: 5px solid $secondarygrey;
     &:hover {
     	color: $navy;
-    	border-bottom: 5px solid white;
     }
   }
 }
