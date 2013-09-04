@@ -251,4 +251,7 @@ h1 {
   .social-links a {
     font-size: 34px;
     color: #99a5b0;
-    margin: 8px; }
+    margin: 8px;
+    -webkit-transition: all .2s ease-out; }
+    .social-links a:hover {
+      color: #02203c; }

@@ -62,5 +62,9 @@ h1 {
     font-size: 34px;
     color: $secondarygrey;
     margin: 8px;
+    -webkit-transition: all .2s ease-out;
+    &:hover {
+    	color: $navy;
+    }
   }
 }
