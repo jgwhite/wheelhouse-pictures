@@ -57,9 +57,9 @@ h1 {
   opacity: 1;
 }
 
-.social-links {
+.links, .social-links {
   position: fixed;
-  bottom: 40px;
+  bottom: 30px;
   text-align: center;
   width: 100%;
   a {
@@ -71,6 +71,17 @@ h1 {
     -webkit-transition: all .2s ease-out;
     &:hover {
     	color: $navy;
+    }
+  }
+}
+
+.links {
+  bottom: 84px;
+  a {
+    font-size: 18px;
+    color: $navy;
+    &:hover {
+      color: $secondarygrey;
     }
   }
 }
