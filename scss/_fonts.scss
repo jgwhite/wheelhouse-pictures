@@ -1,4 +1,11 @@
 @font-face {
+	font-family: 'ColfaxWebThin';
+	src: url('../webfonts/ColfaxWebThin.eot');
+	src: url('../webfonts/ColfaxWebThin.eot?#iefix') format('embedded-opentype'), 
+	     url('../webfonts/ColfaxWebThin.woff') format('woff')
+}
+
+@font-face {
 	font-family: 'ColfaxWebRegular';
 	src: url('../webfonts/ColfaxWebRegular.eot');
 	src: url('../webfonts/ColfaxWebRegular.eot?#iefix') format('embedded-opentype'), 

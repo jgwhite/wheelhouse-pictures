@@ -1,87 +1,187 @@
 $navy: #02203C;
 $grey: #E0E4E8;
 $secondarygrey: #99A5B0;
-$colfax-bold: "ColfaxWebBold"  "Helvetica Neue", Helvetica, Arial, sans-serif;
+$colfax-thin: "ColfaxWebThin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$colfax-regular: "ColfaxWebRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$colfax-bold: "ColfaxWebBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+@import "reset";
 @import "ss-social";
 @import "fonts";
 
 body, html {
-  background-color: $grey;
   position: relative;
+  font-family: $colfax-regular;
+  line-height: 1.5;
+  color: $navy;
+  background-color: $grey;
+  -webkit-font-smoothing: antialiased;
 }
 
-h1 {
-  text-indent: -9999px;
+p, a {
+  color: $secondarygrey;
+}
+
+a {
+  &:hover {
+    color: $navy;
+  }
 }
 
 .logo {
-  position: relative;
-  width: 95%;
-  margin: 0 auto;
-  @media (min-width: 800px) {
-		width: 66%;
-	}
-}
-
-.logo-flag, .logo-text-fade {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 100;
-}
-
-.logo-image {
-  position: absolute;
-  width: 91%;
-  top: 0;
-  right: 0;
-  z-index: 10;
-}
-
-.logo-text-fade {
-  opacity: 0;
-  -webkit-transition: opacity 4s ease 3s;
-  transition: opacity 4s ease 3s;
-}
-
-.logo-image {
-  opacity: 0;
-  -webkit-transition: opacity 4s ease 3s;
-  transition: opacity 2s ease 3s;
-}
-
-
-.show {
-  opacity: 1;
-}
-
-.links, .social-links {
-  position: fixed;
-  bottom: 30px;
-  text-align: center;
-  width: 100%;
-  a {
-    font-size: 28px;
-    font-family: $colfax-bold;
-    text-decoration: none;
-    color: $secondarygrey;
-    margin: 8px;
-    -webkit-transition: all .2s ease-out;
-    &:hover {
-    	color: $navy;
+  width: 80%;
+  background-color: $grey;
+  padding: 0 10%;
+  img {
+    width: 100%;
+    margin: 40px 0;
+  }
+  @media (min-width: 760px) {
+    position: fixed;
+    width: 25.46875%;
+    padding: 0 3.90625%;
+    img {
+      margin: 186px 0 0 0;
     }
   }
 }
 
-.links {
-  bottom: 84px;
+.site-body {
+  width: 80%;
+  padding: 0 10%;
+  background-color: #fff;
+  img {
+    width: 100%;
+  }
+  @media (min-width: 760px) {
+    width: 54.21875%;
+    padding: 0 6.25%;
+    float: right;
+  }
+}
+
+nav{ 
+  font-family: $colfax-bold;
+  font-size: 16px;
+  margin-top: 8px;
+  li {
+    padding: 16px 0;
+  }
   a {
-    font-size: 18px;
     color: $navy;
+    text-decoration: none;
     &:hover {
-      color: $secondarygrey;
+      padding-bottom: 6px;
+      border-bottom: 1px solid $secondarygrey;
+    }
+  }
+  @media (min-width: 760px) {
+    font-size: 14px;
+    margin-top: 80px;
+    li {
+      float: left;
+      padding: 0 18px 0 0;
+    }
+  }
+  @media (min-width: 1000px) {
+    li {
+      padding: 0 34px 0 0;
+    }
+  }
+}
+
+.social-links {
+  font-size: 24px;
+  li {
+    padding: 16px 16px 16px 0;
+    float: left;
+  }
+  a {
+    color: $secondarygrey;
+    &:hover {
+      color: $navy;
+    }
+  }
+  @media (min-width: 760px) {
+    font-size: 18px;
+    position: absolute;
+    top: 62px;
+    right: 3%;
+  }
+}
+
+.main-section {
+  h3 {
+    font-family: $colfax-bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 40px 0;
+    margin-top: 80px;
+    border-top: 4px solid $navy;
+  }
+  h4 {
+    font-family: $colfax-bold;
+    margin-top: 20px;
+  }
+  p {
+    margin-top: 20px;
+  }
+  @media (min-width: 760px) {
+    section {
+      width: 88.472622%;
+    }
+    p, a {
+      font-size: 20px;
+    }
+  }
+}
+
+.wheelhouse-intro {
+  clear: both;
+  border-top: 4px solid $navy;
+  padding: 30px 0;
+  -webkit-font-smoothing: subpixel-antialiased;
+  h2 {
+    font-family: $colfax-thin;
+    font-size: 30px;
+  }
+  .announcement {
+    color: $secondarygrey;
+    font-size: 14px;
+  }
+  p {
+    margin-bottom: 18px;
+  }
+  a {
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $secondarygrey;
+  }
+  @media (min-width: 760px) {
+    border: none;
+    padding: 70px 0;
+    h2 {
+      font-size: 48px;
+    }
+    .announcement p, .announcement a {
+      font-size: 16px;
+      width: 53.161593%;
+      margin-top: 60px;
+    }
+  }
+}
+
+.dogfish {
+  padding: 40px 0;
+  margin-top: 80px;
+  border-top: 4px solid $navy;
+  img {
+    width: 50%;
+  }
+  @media (min-width: 760px) {
+    padding: 40px 0 30px 0;
+    img {
+      width: 25%;
     }
   }
 }

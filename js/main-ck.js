@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".logo-text-fade, .logo-image").addClass("show")});
+$(document).ready(function(){$("nav a").on("click",function(){var e=$(this).attr("href"),t=$(e).offset().top;$("body").animate({scrollTop:t},750);return!1})});

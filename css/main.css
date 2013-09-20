@@ -1,4 +1,51 @@
 @charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 /*
 * Symbolset
 * www.symbolset.com
@@ -204,6 +251,11 @@ html:hover [class^="ss-"] {
   content: ''; }
 
 @font-face {
+  font-family: 'ColfaxWebThin';
+  src: url("../webfonts/ColfaxWebThin.eot");
+  src: url("../webfonts/ColfaxWebThin.eot?#iefix") format("embedded-opentype"), url("../webfonts/ColfaxWebThin.woff") format("woff"); }
+
+@font-face {
   font-family: 'ColfaxWebRegular';
   src: url("../webfonts/ColfaxWebRegular.eot");
   src: url("../webfonts/ColfaxWebRegular.eot?#iefix") format("embedded-opentype"), url("../webfonts/ColfaxWebRegular.woff") format("woff"); }
@@ -214,66 +266,139 @@ html:hover [class^="ss-"] {
   src: url("../webfonts/ColfaxWebBold.eot?#iefix") format("embedded-opentype"), url("../webfonts/ColfaxWebBold.woff") format("woff"); }
 
 body, html {
+  position: relative;
+  font-family: "ColfaxWebRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #02203c;
   background-color: #e0e4e8;
-  position: relative; }
+  -webkit-font-smoothing: antialiased; }
 
-h1 {
-  text-indent: -9999px; }
+p, a {
+  color: #99a5b0; }
+
+a:hover {
+  color: #02203c; }
 
 .logo {
-  position: relative;
-  width: 95%;
-  margin: 0 auto; }
-  @media (min-width: 800px) {
+  width: 80%;
+  background-color: #e0e4e8;
+  padding: 0 10%; }
+  .logo img {
+    width: 100%;
+    margin: 40px 0; }
+  @media (min-width: 760px) {
     .logo {
-      width: 66%; } }
+      position: fixed;
+      width: 25.46875%;
+      padding: 0 3.90625%; }
+      .logo img {
+        margin: 186px 0 0 0; } }
 
-.logo-flag, .logo-text-fade {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 100; }
+.site-body {
+  width: 80%;
+  padding: 0 10%;
+  background-color: #fff; }
+  .site-body img {
+    width: 100%; }
+  @media (min-width: 760px) {
+    .site-body {
+      width: 54.21875%;
+      padding: 0 6.25%;
+      float: right; } }
 
-.logo-image {
-  position: absolute;
-  width: 91%;
-  top: 0;
-  right: 0;
-  z-index: 10; }
+nav {
+  font-family: "ColfaxWebBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin-top: 8px; }
+  nav li {
+    padding: 16px 0; }
+  nav a {
+    color: #02203c;
+    text-decoration: none; }
+    nav a:hover {
+      padding-bottom: 6px;
+      border-bottom: 1px solid #99a5b0; }
+  @media (min-width: 760px) {
+    nav {
+      font-size: 14px;
+      margin-top: 80px; }
+      nav li {
+        float: left;
+        padding: 0 18px 0 0; } }
+  @media (min-width: 1000px) {
+    nav li {
+      padding: 0 34px 0 0; } }
 
-.logo-text-fade {
-  opacity: 0;
-  -webkit-transition: opacity 4s ease 3s;
-  transition: opacity 4s ease 3s; }
-
-.logo-image {
-  opacity: 0;
-  -webkit-transition: opacity 4s ease 3s;
-  transition: opacity 2s ease 3s; }
-
-.show {
-  opacity: 1; }
-
-.links, .social-links {
-  position: fixed;
-  bottom: 30px;
-  text-align: center;
-  width: 100%; }
-  .links a, .social-links a {
-    font-size: 28px;
-    font-family: "ColfaxWebBold" "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-decoration: none;
-    color: #99a5b0;
-    margin: 8px;
-    -webkit-transition: all .2s ease-out; }
-    .links a:hover, .social-links a:hover {
+.social-links {
+  font-size: 24px; }
+  .social-links li {
+    padding: 16px 16px 16px 0;
+    float: left; }
+  .social-links a {
+    color: #99a5b0; }
+    .social-links a:hover {
       color: #02203c; }
+  @media (min-width: 760px) {
+    .social-links {
+      font-size: 18px;
+      position: absolute;
+      top: 62px;
+      right: 3%; } }
 
-.links {
-  bottom: 84px; }
-  .links a {
-    font-size: 18px;
-    color: #02203c; }
-    .links a:hover {
-      color: #99a5b0; }
+.main-section h3 {
+  font-family: "ColfaxWebBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 40px 0;
+  margin-top: 80px;
+  border-top: 4px solid #02203c; }
+.main-section h4 {
+  font-family: "ColfaxWebBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 20px; }
+.main-section p {
+  margin-top: 20px; }
+@media (min-width: 760px) {
+  .main-section section {
+    width: 88.472622%; }
+  .main-section p, .main-section a {
+    font-size: 20px; } }
+
+.wheelhouse-intro {
+  clear: both;
+  border-top: 4px solid #02203c;
+  padding: 30px 0;
+  -webkit-font-smoothing: subpixel-antialiased; }
+  .wheelhouse-intro h2 {
+    font-family: "ColfaxWebThin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 30px; }
+  .wheelhouse-intro .announcement {
+    color: #99a5b0;
+    font-size: 14px; }
+  .wheelhouse-intro p {
+    margin-bottom: 18px; }
+  .wheelhouse-intro a {
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #99a5b0; }
+  @media (min-width: 760px) {
+    .wheelhouse-intro {
+      border: none;
+      padding: 70px 0; }
+      .wheelhouse-intro h2 {
+        font-size: 48px; }
+      .wheelhouse-intro .announcement p, .wheelhouse-intro .announcement a {
+        font-size: 16px;
+        width: 53.161593%;
+        margin-top: 60px; } }
+
+.dogfish {
+  padding: 40px 0;
+  margin-top: 80px;
+  border-top: 4px solid #02203c; }
+  .dogfish img {
+    width: 50%; }
+  @media (min-width: 760px) {
+    .dogfish {
+      padding: 40px 0 30px 0; }
+      .dogfish img {
+        width: 25%; } }
