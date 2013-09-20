@@ -60,7 +60,7 @@ a {
   }
 }
 
-nav{ 
+nav { 
   font-family: $colfax-bold;
   font-size: 16px;
   margin-top: 8px;
@@ -161,12 +161,17 @@ nav{
     border: none;
     padding: 70px 0;
     h2 {
-      font-size: 48px;
+      font-size: 39px;
     }
     .announcement p, .announcement a {
       font-size: 16px;
       width: 53.161593%;
       margin-top: 60px;
+    }
+  }
+  @media (min-width: 1060px) {
+    h2 {
+      font-size: 48px;
     }
   }
 }
