@@ -110,6 +110,9 @@ nav {
 }
 
 .main-section {
+  section {
+    margin-bottom: 80px;
+  }
   h3 {
     font-family: $colfax-bold;
     font-size: 12px;
@@ -120,13 +123,13 @@ nav {
   }
   h4 {
     font-family: $colfax-bold;
-    margin-top: 20px;
+    margin-top: 12px;
   }
   p {
-    margin-top: 20px;
+    margin-top: 14px;
   }
   @media (min-width: 760px) {
-    section {
+    section p, section h4 {
       width: 88.472622%;
     }
     p, a {

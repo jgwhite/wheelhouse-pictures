@@ -140,6 +140,8 @@ nav {
       top: 62px;
       right: 3%; } }
 
+.main-section section {
+  margin-bottom: 80px; }
 .main-section h3 {
   font-family: "ColfaxWebBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
@@ -149,11 +151,11 @@ nav {
   border-top: 4px solid #02203c; }
 .main-section h4 {
   font-family: "ColfaxWebBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-top: 20px; }
+  margin-top: 12px; }
 .main-section p {
-  margin-top: 20px; }
+  margin-top: 14px; }
 @media (min-width: 760px) {
-  .main-section section {
+  .main-section section p, .main-section section h4 {
     width: 88.472622%; }
   .main-section p, .main-section a {
     font-size: 20px; } }
