@@ -61,6 +61,7 @@ table {
   src: url("../webfonts/ColfaxWebBold.eot?#iefix") format("embedded-opentype"), url("../webfonts/ColfaxWebBold.woff") format("woff"); }
 
 body, html {
+  height: 100%;
   position: relative;
   font-family: "ColfaxWebRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -74,20 +75,78 @@ p, a {
 a:hover {
   color: #02203c; }
 
-.logo {
-  width: 80%;
-  background-color: #e0e4e8;
-  padding: 0 10%; }
-  .logo img {
-    width: 100%;
-    margin: 40px 0; }
+.logo-area {
+  width: 100%; }
   @media (min-width: 760px) {
-    .logo {
+    .logo-area {
       position: fixed;
-      width: 25.46875%;
-      padding: 0 3.90625%; }
-      .logo img {
-        margin: 186px 0 0 0; } }
+      height: 100%;
+      width: 33.28125%;
+      float: left; } }
+
+.logo-bg {
+  width: 33.28125%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out; }
+
+@media (min-width: 760px) {
+  .about-bg {
+    background: url(../images/sea-2.jpg) left bottom;
+    background-size: cover; } }
+
+@media (min-width: 760px) {
+  .mfk-bg {
+    background: url(../images/MFK-2.jpg) left bottom;
+    background-size: cover; } }
+
+@media (min-width: 760px) {
+  .awol-bg {
+    background: url(../images/awol-2.jpg) center bottom;
+    background-size: cover; } }
+
+@media (min-width: 760px) {
+  .penny-bg {
+    background: url(../images/Penny-Dreadful-2.jpg) center top;
+    background-size: cover; } }
+
+@media (min-width: 760px) {
+  .stick-bg {
+    background: url(../images/Stick-and-Chub-2.jpg) right top;
+    background-size: cover; } }
+
+.logo {
+  padding: 0;
+  z-index: 1000; }
+  .logo .logo-flag-navy, .logo .logo-flag-white {
+    width: 80%;
+    margin: 40px 0;
+    padding: 0 10%; }
+  @media (min-width: 760px) {
+    .logo .logo-flag-navy, .logo .logo-flag-white {
+      position: absolute;
+      margin: 187px 0 0 0;
+      width: 80%;
+      padding: 0 10%; } }
+
+.logo-flag-white {
+  display: none; }
+  @media (min-width: 760px) {
+    .logo-flag-white {
+      display: block;
+      z-index: 1000;
+      opacity: 0;
+      -webkit-transition: opacity 1s ease-in-out;
+      -moz-transition: opacity 1s ease-in-out;
+      -o-transition: opacity 1s ease-in-out;
+      transition: opacity 1s ease-in-out; } }
 
 .site-body {
   width: 80%;
@@ -202,3 +261,6 @@ nav {
       padding: 40px 0 30px 0; }
       .dogfish img {
         width: 25%; } }
+
+.show {
+  opacity: 1; }
