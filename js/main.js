@@ -13,21 +13,6 @@ $(document).ready(function() {
     
   });
   
-  $("#about-wheelhouse").waypoint(function(direction) {
-
-    if (direction == "down") {
-      $(".logo-flag-navy").fadeOut(1000);
-      $(".logo-flag-white").addClass("show");
-      $(".about-bg").addClass("show");
-      
-    } else {
-      $(".logo-flag-white").removeClass("show");
-      $(".logo-flag-navy").fadeIn(1000);
-      $(".about-bg").removeClass("show");
-    }
-    
-  }, { offset: 200});
-  
   $("#mfk").waypoint(function(direction) {
 
     if (direction == "down") {

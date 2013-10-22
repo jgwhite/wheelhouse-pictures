@@ -108,11 +108,9 @@ a {
 }
 
 .logo-flag-white {
-  display: none;
-  @media (min-width: 760px) {
     display: block;
+  @media (min-width: 760px) {
     z-index: 1000;
-    opacity: 0;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;

@@ -137,12 +137,10 @@ a:hover {
       padding: 0 10%; } }
 
 .logo-flag-white {
-  display: none; }
+  display: block; }
   @media (min-width: 760px) {
     .logo-flag-white {
-      display: block;
       z-index: 1000;
-      opacity: 0;
       -webkit-transition: opacity 1s ease-in-out;
       -moz-transition: opacity 1s ease-in-out;
       -o-transition: opacity 1s ease-in-out;
