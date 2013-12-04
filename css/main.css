@@ -122,6 +122,11 @@ a:hover {
     background: url(../images/Stick-and-Chub-2.jpg) right top;
     background-size: cover; } }
 
+@media (min-width: 760px) {
+  .love-bg {
+    background: url(../images/original-love-1.jpg) right top;
+    background-size: cover; } }
+
 .logo {
   padding: 0;
   z-index: 1000; }
@@ -224,7 +229,7 @@ nav {
   -webkit-font-smoothing: subpixel-antialiased; }
   .wheelhouse-intro h2 {
     font-family: "ColfaxWebThin", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 30px; }
+    font-size: 28px; }
   .wheelhouse-intro .announcement {
     color: #99a5b0;
     font-size: 14px; }
@@ -239,14 +244,14 @@ nav {
       border: none;
       padding: 70px 0; }
       .wheelhouse-intro h2 {
-        font-size: 39px; }
+        font-size: 36px; }
       .wheelhouse-intro .announcement p, .wheelhouse-intro .announcement a {
         font-size: 16px;
         width: 53.161593%;
         margin-top: 60px; } }
   @media (min-width: 1060px) {
     .wheelhouse-intro h2 {
-      font-size: 48px; } }
+      font-size: 44px; } }
 
 .dogfish {
   padding: 40px 0;

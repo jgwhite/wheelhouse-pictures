@@ -65,6 +65,19 @@ $(document).ready(function() {
     
   }, { offset: 200});
   
+  $("#love").waypoint(function(direction) {
+
+    if (direction == "down") {
+      $(".stick-bg").removeClass("show");
+      $(".love-bg").addClass("show");
+      
+    } else {
+      $(".love-bg").removeClass("show");
+      $(".stick-bg").addClass("show");
+    }
+    
+  }, { offset: 200});
+  
   
   /*
 $("#about-wheelhouse").waypoint(function(direction) {

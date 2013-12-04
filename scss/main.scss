@@ -88,6 +88,13 @@ a {
   }
 }
 
+.love-bg {
+  @media (min-width: 760px) {
+    background: url(../images/original-love-1.jpg) right top;
+    background-size: cover;
+  }
+}
+
 .logo {
   padding: 0;
   z-index: 1000;
@@ -218,7 +225,7 @@ nav {
   -webkit-font-smoothing: subpixel-antialiased;
   h2 {
     font-family: $colfax-thin;
-    font-size: 30px;
+    font-size: 28px;
   }
   .announcement {
     color: $secondarygrey;
@@ -236,7 +243,7 @@ nav {
     border: none;
     padding: 70px 0;
     h2 {
-      font-size: 39px;
+      font-size: 36px;
     }
     .announcement p, .announcement a {
       font-size: 16px;
@@ -246,7 +253,7 @@ nav {
   }
   @media (min-width: 1060px) {
     h2 {
-      font-size: 48px;
+      font-size: 44px;
     }
   }
 }
