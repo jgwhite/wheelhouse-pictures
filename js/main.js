@@ -39,41 +39,15 @@ $(document).ready(function() {
     
   }, { offset: 200});
   
-  $("#penny").waypoint(function(direction) {
-
-    if (direction == "down") {
-      $(".awol-bg").removeClass("show");
-      $(".penny-bg").addClass("show");
-      
-    } else {
-      $(".penny-bg").removeClass("show");
-      $(".awol-bg").addClass("show");
-    }
-    
-  }, { offset: 200});
-  
-  $("#stick").waypoint(function(direction) {
-
-    if (direction == "down") {
-      $(".penny-bg").removeClass("show");
-      $(".stick-bg").addClass("show");
-      
-    } else {
-      $(".stick-bg").removeClass("show");
-      $(".penny-bg").addClass("show");
-    }
-    
-  }, { offset: 200});
-  
   $("#love").waypoint(function(direction) {
 
     if (direction == "down") {
-      $(".stick-bg").removeClass("show");
+      $(".awol-bg").removeClass("show");
       $(".love-bg").addClass("show");
       
     } else {
       $(".love-bg").removeClass("show");
-      $(".stick-bg").addClass("show");
+      $(".awol-bg").addClass("show");
     }
     
   }, { offset: 200});
